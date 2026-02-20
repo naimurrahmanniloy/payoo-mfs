@@ -62,5 +62,83 @@
         </div>
       </section>
     </header>
+
+    <section class="w-11/12 mx-auto py-10 space-y-5">
+      <h2 class="text-3xl font-bold">
+        Welcome to Pay<span class="text-primary">oo</span>
+      </h2>
+      <p class="text-neutral/50">
+        Enjoy easy and convenient financial services with us. Cashout charge is
+        low and
+      </p>
+
+      <div class="buttons grid grid-cols-3 gap-3">
+        <button class="btn flex-col h-full py-4">
+          <img src="./assets/opt-1.png" alt="" />
+          <p>Add Money</p>
+        </button>
+        <button class="btn flex-col h-full py-4">
+          <img src="./assets/opt-2.png" alt="" />
+          <p>Cashout</p>
+        </button>
+        <button class="btn flex-col h-full py-4">
+          <img src="./assets/opt-3.png" alt="" />
+          <p>Transfer Money</p>
+        </button>
+        <button class="btn flex-col h-full py-4">
+          <img src="./assets/opt-4.png" alt="" />
+          <p>Get Bonus</p>
+        </button>
+        <button class="btn flex-col h-full py-4">
+          <img src="./assets/opt-5.png" alt="" />
+          <p>Pay Bill</p>
+        </button>
+        <button class="btn flex-col h-full py-4">
+          <img src="./assets/opt-6.png" alt="" />
+          <p>Transactions</p>
+        </button>
+      </div>
+    </section>
+    <section id="cashout" class="w-11/12 mx-auto py-5">
+      <h2 class="text-xl font-bold mb-5">Cashout</h2>
+      <div class="card bg-base-100 w-full rounded-2xl">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral font-bold">Agent Number</label>
+            <input
+              id="cashout-num"
+              maxlength="11"
+              minlength="11"
+              type="text"
+              class="input w-full rounded-full bg-base-200"
+              placeholder="Enter Agent Number"
+            />
+            <br />
+            <label class="label text-neutral font-bold">Amount Number</label>
+            <input
+              id="cashout-amount"
+              maxlength="11"
+              minlength="11"
+              type="number"
+              class="input w-full rounded-full bg-base-200"
+              placeholder="Enter Amount for withdraw"
+            />
+            <br />
+            <label class="label text-neutral font-bold">4 Digit Pin</label>
+            <input
+              id="cashout-pin"
+              maxlength="4"
+              minlength="4"
+              type="password"
+              class="input rounded-full w-full bg-base-200"
+              placeholder="Enter 4 Digit Pin"
+            />
+            <button id="login-btn" class="btn btn-primary rounded-full mt-4">
+              Login
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

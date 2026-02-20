@@ -7,7 +7,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
   const pin = pinInput.value;
   // match pin and phone
   if (contactNumber == "01234567890" && pin == "1234") {
-    alert("hurray");
+    alert("Successfully Login");
     window.location.assign("./home.html");
   }
   // if true return alert and  hompage
