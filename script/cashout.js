@@ -20,4 +20,13 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
     alert("Invalid Pin");
     return;
   }
+
+  const history = document.getElementById("history-container");
+  const newTransaction = document.createElement("div");
+  newTransaction.innerHTML = `
+    <div class="transection-card p-5 bg-base-100"> 
+        <p><strong>Type:</strong> Cashout</p>
+        <p>Money cashed out from ${cashoutNumber} on ${new Date()}</p>
+    </div>`;
+  history.appendChild(newTransaction);
 });
