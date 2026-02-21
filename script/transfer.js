@@ -20,4 +20,14 @@ document.getElementById("transfer-btn").addEventListener("click", function () {
   } else {
     alert("Invalid PIN");
   }
+
+  // Update transaction history
+  const history = document.getElementById("history-container");
+  const newTransaction = document.createElement("div");
+  newTransaction.innerHTML = `  
+    <div class="transection-card p-5 bg-base-100"> 
+        <p><strong>Type:</strong> Transfer</p>
+        <p>Money transferred to ${transferAmount} on ${new Date()}</p>
+    </div>`;
+  history.appendChild(newTransaction);
 });
