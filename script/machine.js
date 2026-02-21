@@ -16,3 +16,15 @@ function setBalance(value) {
   const balanceElement = document.getElementById("balance");
   balanceElement.innerText = value;
 }
+// toggle function
+function showOnly(id) {
+  const addMoney = document.getElementById("addMoney");
+  const cashOut = document.getElementById("cashout");
+
+  //now hidding all
+  addMoney.classList.add("hidden");
+  cashOut.classList.add("hidden");
+  //now showing only the selected one
+  const selectedElement = document.getElementById(id);
+  selectedElement.classList.remove("hidden");
+}
